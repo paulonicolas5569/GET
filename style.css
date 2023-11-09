@@ -1,30 +1,22 @@
-/*importaçao de fonte*/
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Quicksand:wght@400;700&display=swap');
 
-<<<<<<< HEAD
 /* CSS Reset */
 
-=======
-/*css reset*/
->>>>>>> 8d0c8f3337ebcc76b0a9e121b8734f2c09db6faa
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-body {
+body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: center;
 }
 
-/*Cabeçalho*/
+/* cabeçario */
 header {
-    margin: 25px 0px 25px 0px;
-<<<<<<< HEAD
-    /* top right botton left*/
-=======
->>>>>>> 8d0c8f3337ebcc76b0a9e121b8734f2c09db6faa
+    margin: 25px 0px 25px 0px ; /* top right botton left*/
 }
 
 header h1 {
@@ -32,30 +24,26 @@ header h1 {
     color: #cc470d;
 }
 
-/*Formulario*/
+/* Formulario */
+
 input[type=number] {
     width: 90px;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #dc143c;
+    border: 1px solid #cc470d;
 }
 
-<<<<<<< HEAD
-input[type=number]::-webkit-inner-spin-button {
-    /* retirar as setinhas o input number do chrome */
+input[type=number]::-webkit-inner-spin-button { /* retirar as setinhas o input number do chrome */
     -webkit-appearance: none;
 }
 
-input[type=number] {
-    /* retirar as setinhas o input number fire fox*/
+input[type=number] { /* retirar as setinhas o input number fire fox*/
 
     -moz-appearance: textfield;
     appearance: textfield;
 }
 
-=======
->>>>>>> 8d0c8f3337ebcc76b0a9e121b8734f2c09db6faa
-.Radio {
+.Radio{
     display: flex;
     justify-content: center;
     margin: 25px 0px 25px 0px;
@@ -72,35 +60,29 @@ input[type=number] {
 
 #atividade {
     margin-bottom: 25px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
-    border: 1px solid #dc143c;
+    border: 1px #cc470d;
 }
 
 input[type=button] {
     padding: 10px 25px 10px 25px;
     margin-right: 15px;
     border-radius: 25px;
-    border: none;
-    background-color: #dc143c;
-    color: #ffffff;
+    border: nome;
+    background-color: #cc470d;
+    color: #fff;
 }
 
 input[type=reset] {
     padding: 10px 25px 10px 25px;
     border-radius: 25px;
-<<<<<<< HEAD
     border: nome;
-    background-color: #cc470d;
+    background-color: #000;
     color: #fff;
-=======
-    border: none;
-    background-color: #000000;
-    color: #ffffff;
->>>>>>> 8d0c8f3337ebcc76b0a9e121b8734f2c09db6faa
 }
 
-/*Info (IMC e FCM)*/
+/* Info IMC e FCM*/
 .Info {
     display: flex;
     justify-content: center;
@@ -116,18 +98,18 @@ input[type=reset] {
     display: flex;
     justify-content: center;
     text-align: center;
+
 }
 
-/*Calorias  nescessarias por dia*/
+/*Calorias*/
 #calorias {
     font-size: 2em;
     font-weight: 700;
-    color: #dc143c
+    color: #cc470d;
 }
 
+/* Coração Pulsando */
 
-
-/*Coraçao Pulsando*/
 .Coracao {
     width: 50px;
     height: 50px;
@@ -137,84 +119,60 @@ input[type=reset] {
     margin-left: 50px;
     animation: pulsar 0.7s infinite alternate;
     z-index: -1;
+    top: 50px;
 }
 
-.Quadrado {
+.Quadrado{
     width: 50px;
     height: 50px;
     /*border: 1px solid #000;*/
     position: absolute;
-<<<<<<< HEAD
-    background-color: #e74c3c;
-=======
-    background-color: #dc143c;
->>>>>>> 8d0c8f3337ebcc76b0a9e121b8734f2c09db6faa
+    background-color: #e74c3c; ;
 }
 
 .Circulo {
     width: 50px;
     height: 50px;
-<<<<<<< HEAD
-    /* border: 1px solid #000;*/
+   /* border: 1px solid #000;*/
     border-radius: 50px;
     position: absolute;
-    background-color: #e74c3c;
-    ;
+    background-color: #e74c3c; ;
 
-=======
-    /*border: 1px solid #000;*/
-    border-radius: 50px;
-    position: absolute;
-    background-color: #dc143c;
->>>>>>> 8d0c8f3337ebcc76b0a9e121b8734f2c09db6faa
 }
 
 .Top {
     top: 50%;
 }
 
-.Left {
+.Left{
     left: 50%;
 }
-
-<<<<<<< HEAD
-#freq {
-=======
 #freq{
->>>>>>> 8d0c8f3337ebcc76b0a9e121b8734f2c09db6faa
     position: absolute;
-    padding-left: 40px;
+    padding-left: 55px;
     color: #fff;
 }
 
-<<<<<<< HEAD
 /* Animação com CSS */
-=======
-/*Animaçao com CSS*/
->>>>>>> 8d0c8f3337ebcc76b0a9e121b8734f2c09db6faa
-@keyframes pulsar {
-    0% {
+@keyframes pulsar{
+    0%{
         transform: scale(0.95) rotate(-135deg);
     }
-
-    100% {
+    100%{
         transform: scale(1.15) rotate(-135deg);
     }
 }
 
+
 /* rotacionar tela */
 @media screen and (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
     html {
-        transform: rotate(-90deg);
-        transform-origin: left top;
-        width: 100vh;
-        overflow-x: hidden;
-        position: absolute;
-        top: 100%;
-        left: 0;
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
     }
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 8d0c8f3337ebcc76b0a9e121b8734f2c09db6faa
+  }
