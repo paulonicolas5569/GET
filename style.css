@@ -3,12 +3,12 @@
 
 /* CSS Reset */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: center;
@@ -16,7 +16,8 @@ body{
 
 /* cabeçario */
 header {
-    margin: 25px 0px 25px 0px ; /* top right botton left*/
+    margin: 25px 0px 25px 0px;
+    /* top right botton left*/
 }
 
 header h1 {
@@ -33,17 +34,19 @@ input[type=number] {
     border: 1px solid #cc470d;
 }
 
-input[type=number]::-webkit-inner-spin-button { /* retirar as setinhas o input number do chrome */
+input[type=number]::-webkit-inner-spin-button {
+    /* retirar as setinhas o input number do chrome */
     -webkit-appearance: none;
 }
 
-input[type=number] { /* retirar as setinhas o input number fire fox*/
+input[type=number] {
+    /* retirar as setinhas o input number fire fox*/
 
     -moz-appearance: textfield;
     appearance: textfield;
 }
 
-.Radio{
+.Radio {
     display: flex;
     justify-content: center;
     margin: 25px 0px 25px 0px;
@@ -78,7 +81,7 @@ input[type=reset] {
     padding: 10px 25px 10px 25px;
     border-radius: 25px;
     border: nome;
-    background-color: #000;
+    background-color: #cc470d;
     color: #fff;
 }
 
@@ -122,21 +125,22 @@ input[type=reset] {
     top: 50px;
 }
 
-.Quadrado{
+.Quadrado {
     width: 50px;
     height: 50px;
     /*border: 1px solid #000;*/
     position: absolute;
-    background-color: #e74c3c; ;
+    background-color: #e74c3c;
 }
 
 .Circulo {
     width: 50px;
     height: 50px;
-   /* border: 1px solid #000;*/
+    /* border: 1px solid #000;*/
     border-radius: 50px;
     position: absolute;
-    background-color: #e74c3c; ;
+    background-color: #e74c3c;
+    ;
 
 }
 
@@ -144,21 +148,23 @@ input[type=reset] {
     top: 50%;
 }
 
-.Left{
+.Left {
     left: 50%;
 }
-#freq{
+
+#freq {
     position: absolute;
     padding-left: 55px;
     color: #fff;
 }
 
 /* Animação com CSS */
-@keyframes pulsar{
-    0%{
+@keyframes pulsar {
+    0% {
         transform: scale(0.95) rotate(-135deg);
     }
-    100%{
+
+    100% {
         transform: scale(1.15) rotate(-135deg);
     }
 }
@@ -167,12 +173,12 @@ input[type=reset] {
 /* rotacionar tela */
 @media screen and (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
     html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
-  }
+}
